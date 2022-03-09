@@ -1,0 +1,139 @@
+body {
+ margin: 0;
+ padding: 0;
+ background-color: #eee !important;
+ font-size: 13px !important;
+}
+.sidenav{
+ top: 65px;
+ width: 240px;
+ height: 100%; 
+ padding-bottom: 140px;
+}
+
+#main{
+ min-height: calc(100% - 100px);
+ padding-left: 248px;
+ padding-right: 10px;
+}
+
+  @media only screen and (max-width : 992px) {
+      #main {
+        padding-left: 0;
+        padding-right: 0;
+      }
+    }
+
+table thead{text-transform: uppercase; line-height: 30px; margin-top: 5px;}
+
+
+
+
+.sidenav::-webkit-scrollbar{width: 10px; background: #e3e0d6;}
+.sidenav::-webkit-scrollbar-track{ background: rgba(0,0,0,0.1); }
+.sidenav::-webkit-scrollbar-thumb{ border-radius: 10px; background: rgba(0, 0, 0, 0.87); }
+
+.sidenav li > a {
+ height: 38px;
+ line-height: 38px;
+}
+
+.sidenav .collapsible-header i {
+     margin-right: 1rem !important;
+     font-size: 15px;
+    }
+
+.tabs .tab a {
+ color: rgba(38, 166, 154, 0.7);
+ /*Custom Text Color*/
+}
+.tabs .tab a:hover {
+ color:#26a69a;
+ /*Custom Color On Hover*/
+}
+.tabs .tab a:focus.active {
+ color:#26a69a;
+ /*Custom Text Color While Active*/
+ background-color: rgba(38, 166, 154, 0.2);
+ /*Custom Background Color While Active*/
+}
+.tabs .indicator {
+ background-color:#26a69a;
+ /*Custom Color Of Indicator*/
+}
+
+th{ font-weight: 400 !important;}
+td, th {
+ padding: 10px !important;
+}
+
+*{ box-sizing: border-box;}
+
+nav .sidenav-trigger {
+ margin: 0 8px; 
+}
+nav ul a {
+ padding: 0 10px;
+}
+
+.btn-small {
+ height: 24px;
+ line-height: 24px;
+ padding: 0 0.5rem;
+}
+
+.btn-block{width: 100%;}
+
+.dropdown-content { min-width: 200px; }
+
+
+.input-field {
+ margin-top: 0rem !important; 
+}
+
+.tituloAba
+{
+ position: fixed;
+ z-index: 9;
+ background: #fff;    
+ width: 100%;
+ padding: 20px;
+}
+
+.m-r-10{
+    margin-right: 10px;
+}
+.pagination li.active {
+    background-color: #2196f3 !important;
+}
+
+	@media print {
+		body 
+		{
+			background-color: #FFFFFF !important;
+		}
+		#main 
+		{
+			min-height: calc(100% - 100px);
+			padding-left: 0px;
+			padding-right: 0px;
+		}
+		.noprint { display: none !important; }      
+
+
+		thead {
+		font-size: 13px !important;   
+	}
+	 tbody {
+		font-size: 10px !important;   
+	}
+
+	h6 {
+		font-size: 13px !important;
+	}
+
+	.card .card-content {
+     padding: 5px !important; 
+}
+
+	}
